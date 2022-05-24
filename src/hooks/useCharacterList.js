@@ -12,7 +12,7 @@ const GET_CHARACTERS = gql`
   }
 `;
 
-export const useCharacters = () => {
+export const useCharacterList = () => {
   const { error, data, loading } = useQuery(GET_CHARACTERS);
 
   return {
